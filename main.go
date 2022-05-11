@@ -15,13 +15,14 @@ func main() {
     router := gin.Default()
     router.LoadHTMLGlob("templates/*")
 
-    // initializeRoutes(router)
-  router.GET("/", showIndexPage)
-  // Handle GET requests at /article/view/some_article_id
-  router.GET("/article/view/:article_id", getArticle)
+    //initializeRoutes()
+    router.GET("/", showIndexPage)
+    // Handle GET requests at /article/view/some_article_id
+    router.GET("/article/view/:article_id", getArticle)
 
     router.Run()
 }
+
 
 // Render one of HTML, JSON or CSV based on the 'Accept' header of the request
 // If the header doesn't specify this, HTML is rendered, provided that
