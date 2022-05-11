@@ -18,8 +18,3 @@ blocks:
             - go get ./...
             - go test ./...
             - go build -v .
-  - name: 'Block #2'
-    task:
-      jobs:
-        - name: 'Job #1'
-          commands: []
