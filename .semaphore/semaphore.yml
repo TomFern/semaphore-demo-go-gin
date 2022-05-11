@@ -32,7 +32,7 @@ blocks:
       jobs:
         - name: Unit tests
           commands:
-            - go test./...
+            - go test ./...
   - name: Build
     task:
       prologue:
