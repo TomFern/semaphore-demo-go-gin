@@ -13,7 +13,6 @@ var tmpArticleList []article
 
 // This function is used for setup before executing the test functions
 func TestMain(m *testing.M) {
-
   //Set Gin to Test Mode
   gin.SetMode(gin.TestMode)
 
